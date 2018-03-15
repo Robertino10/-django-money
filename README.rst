@@ -353,4 +353,5 @@ Known Issues
 Updates to a model form will not save in Django 1.10.1.  They will save in 1.10.0 and is expected to be fixed in Django 1.10.2.
 ::
 
-     https://github.com/django/django/pull/7217
+     [https://github.com/Robertino10/-django-money.git]
+     
