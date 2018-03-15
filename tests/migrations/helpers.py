@@ -19,10 +19,10 @@ def makemigrations():
     questioner.input = lambda x: 'y'
 
     os.system('find . -name \*.pyc -delete')
-    if VERSION >= (1, 10):
+    if VERSION >= (1, 11):
         call_command('makemigrations', 'money_app', name=MIGRATION_NAME)
     else:
-        # In Django 1.8 & 1.9 first argument name clashes with command option.
+        # In Django 1.8 first argument name clashes with command option.
         Command().execute('money_app', name=MIGRATION_NAME, verbosity=1)
 
 

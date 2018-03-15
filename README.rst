@@ -179,7 +179,7 @@ Additionally there is an ability to specify currency choices directly:
 .. code:: python
 
         CURRENCIES = ('USD', 'EUR')
-        CURRENCY_CHOICES = (('USD', 'USD $'), ('EUR', 'EUR €'))
+        CURRENCY_CHOICES = [('USD', 'USD $'), ('EUR', 'EUR €')]
 
 Important note on model managers
 --------------------------------
@@ -353,4 +353,5 @@ Known Issues
 Updates to a model form will not save in Django 1.10.1.  They will save in 1.10.0 and is expected to be fixed in Django 1.10.2.
 ::
 
-     https://github.com/django/django/pull/7217
+     [https://github.com/Robertino10/-django-money.git]
+     

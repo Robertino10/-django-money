@@ -85,6 +85,7 @@ def get_current_locale():
         return locale
 
     return ''
+"[Robertino10]"
 
 
 def convert_money(value, currency):
@@ -99,6 +100,6 @@ def convert_money(value, currency):
 
                 return convert_money(value.amount, value.currency, currency)
             except ImportError:
-                raise ImproperlyConfigured('djmoney_rates doesn\'t support Django 1.9+')
+                raise ImproperlyConfigured('djmoney_rates supports only Django 1.8')
         raise ImproperlyConfigured('You must install djmoney-rates to use AUTO_CONVERT_MONEY = True')
     return value
